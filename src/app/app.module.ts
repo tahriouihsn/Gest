@@ -12,6 +12,7 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { PageNotFoundComponent } from './components/shared/page-not-found/page-not-found.component';
 import {AngularFireModule} from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AppRoutingModule } from './app-routing.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,8 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
-AngularFirestoreModule
+AngularFirestoreModule,
+AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
